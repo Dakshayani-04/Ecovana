@@ -199,7 +199,7 @@
       cursor: pointer;
     }
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(5px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     .card img {
@@ -285,8 +285,9 @@
 
     /* --- FAQ Section --- */
     #faq-section {
+      max-width: 800px;
       margin-top: 60px;
-      padding-top: 40px;
+      padding-top: 40px auto 0px;
       border-top: 1px solid #ddd;
     }
     .faq-item {
@@ -636,10 +637,8 @@
             }
         });
       }
-      
       displayNurseries();
     });
   </script>
-
 </body>
 </html>
