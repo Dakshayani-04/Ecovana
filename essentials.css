@@ -80,16 +80,16 @@ body {
     width: auto-fit;
     margin-top: 50px;
     margin-left: 30px;
-    display: none;
+    /* display: none; */
     text-decoration: none;
     text-align: center;
 }
 
-.block:hover .hover-text {
+/* .block:hover .hover-text {
     display: block;
     text-decoration: none;
     text-align: center;
-}
+} */
 
 .image {
     max-width: 400px;
