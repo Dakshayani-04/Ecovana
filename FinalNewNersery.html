@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
   <style>
-    /* --- Global Reset & Basic Setup --- */
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -28,7 +28,7 @@
       padding-bottom:0px;
     }
 
-    /* Background image with a light overlay */
+
     body::before {
       content: '';
       position: fixed;
@@ -39,11 +39,11 @@
       height: 100%;
       background-size: cover;
       background-attachment: fixed;
-      z-index: -2; /* Place it behind everything */
+      z-index: -2;
     }
 
     .header {
-      position:relative; /* Makes header sticky */
+      position:relative; 
       top: 0;
       left: 0;
       width: 100%;
@@ -95,21 +95,21 @@
       display: block;
     }
     .header_side_bars {
-      display: none; /* Hidden on desktop */
+      display: none; 
       padding-right: 20px;
     }
     .header_bars {
       cursor: pointer;
     }
     .header_menu {
-      position: fixed; /* Changed to fixed for full screen overlay */
+      position: fixed;
       width: 250px;
       height: 100vh;
       top: 0;
-      right: -250px; /* Start off-screen */
+      right: -250px;
       transition: right 0.4s ease;
       background-color: #CDEAC0;
-      z-index: 1001; /* Higher than header */
+      z-index: 1001; 
     }
     .submenu {
       width: 100%;
@@ -139,7 +139,6 @@
       color: white;
     }
 
-    /* --- Main Content & Nursery Finder Styles --- */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -199,7 +198,7 @@
       cursor: pointer;
     }
     .card:hover {
-      transform: translateY(5px);
+      transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     .card img {
@@ -221,7 +220,7 @@
       color: #555;
     }
     
-    /* --- Modal (Pop-up) Styling --- */
+
     .modal {
       display: none;
       position: fixed;
@@ -283,11 +282,11 @@
       color: white;
     }
 
-    /* --- FAQ Section --- */
+
     #faq-section {
       max-width: 800px;
       margin-top: 60px;
-      padding-top: 40px auto 0px;
+      padding-top: 40px;
       border-top: 1px solid #ddd;
     }
     .faq-item {
@@ -320,7 +319,7 @@
       opacity: 1;
     }
 
-    /* --- Sticky Footer --- */
+
     .footer {
       position:relative;
       bottom: 0;
@@ -369,13 +368,12 @@
       text-align: center;
     }
 
-    /* --- Responsive Design --- */
     @media (max-width: 1010px) {
       .header_navLinks, .Cart_Login {
           display: none;
       }
       .header_side_bars {
-          display: block; /* Use block or flex as needed */
+          display: block;
       }
       .card { 
         width: calc(50% - 10px);
@@ -397,16 +395,16 @@
           <img src="./UpdatedLogo.png" alt="logo">
       </div>
       <div class="header_navLinks">
-          <a href="#">Home</a>
-          <a href="#">Plants</a>
-          <a href="#">PlantCare</a>
-          <a href="#">Essentials</a>
-          <a href="#">Nearby Nurseries</a>
-          <a href="#">AI chatbot</a>
+          <a href="../../Project/Project/homepage.html">Home</a>
+          <a href="../../PlantsModified.html">Plants</a>
+          <a href="../../Plant_care/rough.html">PlantCare</a>
+          <a href="../../Essentials/project2/essentials.html">Essentials</a>
+          <a href="./FinalNewNersery.html">Nearby Nurseries</a>
+          <a href="../../Project/Project/demo.html">AI chatbot</a>
       </div>
       <div class="Cart_Login">
-          <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #242020; font-size: 20px;"></i></a>
-          <a href="#" class="Login_option">
+          <a href="../../Essentials/project2/cart.html"><i class="fa-solid fa-cart-shopping" style="color: #242020; font-size: 20px;"></i></a>
+          <a href="../../LoginPage/LoginPage/mainlogin.html" class="Login_option">
               <i class="fa-solid fa-circle-user" style="color: #252628; font-size: 20px;"></i>
               <div class="Login_SignUp">Login</div>
           </a>
@@ -417,14 +415,14 @@
           </div>
           <div class="header_menu">
               <div class="cross" onclick="Close()">×</div>
-              <div class="submenu"><a href="#">Home</a></div>
-              <div class="submenu"><a href="#">Plants</a></div>
-              <div class="submenu"><a href="#">PlantCare</a></div>
-              <div class="submenu"><a href="#">Essentials</a></div>
-              <div class="submenu"><a href="#">Nearby Nurseries</a></div>
-              <div class="submenu"><a href="#">AI chatbot</a></div>
-              <div class="submenu"><a href="#">Cart</a></div>
-              <div class="submenu"><a href="#">Login/Sign Up</a></div>
+              <div class="submenu"><a href="../../Project/Project/homepage.html">Home</a></div>
+              <div class="submenu"><a href="../../PlantsModified.html">Plants</a></div>
+              <div class="submenu"><a href="../../Plant_care/rough.html">PlantCare</a></div>
+              <div class="submenu"><a href="../../Essentials/project2/essentials.html">Essentials</a></div>
+              <div class="submenu"><a href="./FinalNewNersery.html">Nearby Nurseries</a></div>
+              <div class="submenu"><a href="../../Project/Project/demo.html">AI chatbot</a></div>
+              <div class="submenu"><a href="../../Essentials/project2/cart.html">Cart</a></div>
+              <div class="submenu"><a href="../../LoginPage/LoginPage/mainlogin.html">Login/Sign Up</a></div>
           </div>
       </div>
   </div>
@@ -445,7 +443,7 @@
 
   <div id="modal-container">
     </div>
-  
+
   <div class="container" id="faq-section">
       <header>
           <h1>Frequently asked questions</h1>
@@ -480,7 +478,6 @@
           <p>Many nurseries offer discounts if you are buying in bulk for landscaping projects or large gardens. Don't hesitate to ask the owner or manager for a bulk rate.</p>
       </div>
   </div>
-
   <footer class="footer">
       <div class="footer_top">
           <div class="footer_about">
@@ -510,21 +507,14 @@
           </div>
       </div>
   </footer>
-
-
   <script>
-    // --- Mobile Menu Functions ---
     function Open(){
       document.querySelector(".header_menu").style.right = "0px";
     }
     function Close(){
       document.querySelector(".header_menu").style.right = "-250px";
     }
-    
-    // --- Nursery Finder App Logic ---
     document.addEventListener('DOMContentLoaded', () => {
-
-      // --- 1. DATA ---
       const nurseryData = [
         { id: 1, name: "Sridha Nursery", owner: "Sridha", address: "Door No: NH16, Cheppela Village, Alamuru - 533233", phone: "08128565171", imgCard: "https://content.jdmagicbox.com/v2/comp/delhi/y1/011pxx11.xx11.110709181753.i1y1/catalogue/nishu-nursery-and-paradise-landscape-enterprises-sarfabad-noida-landscape-gardening-5347ldt3z4.jpg", imgModal: "https://images.jdmagicbox.com/comp/def_content/plant_nurseries/default-plant-nurseries-6.jpg", mapQuery: "Cheppela Village, Alamuru 533233" },
         { id: 2, name: "Sri Satya Venkata Sai Nursery", owner: "Ravi Kumar", address: "Door No: 6-139, Near Flower Market, Kadiyapulanka, T Nagar - 533101", phone: "08867890922", imgCard: "https://content.jdmagicbox.com/comp/rajahmundry/t2/9999px883.x883.151222150146.x2t2/catalogue/satya-venkata-sai-nursery-rajahmundry-landscape-manufacturers-esgxd.jpg", imgModal: "https://content.jdmagicbox.com/comp/def_content/plant_nurseries/default-plant-nurseries-4.jpg", mapQuery: "Kadiyapulanka T Nagar 533101" },
@@ -555,15 +545,12 @@
         { id: 27, name: "Green Twings",owner: "Rakesh",address:"Waltair Main Rd, Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017",phone:"7589643879", imgCard:"https://content.jdmagicbox.com/v2/comp/hyderabad/m5/040pxx40.xx40.240408120158.e7m5/catalogue/wk9ectie348c4xn-44ih1md1wh.jpg", imgModal:"https://lh3.googleusercontent.com/p/AF1QipNzGhBNs0odQ8aiQ1lSlpSCcVh6UeyzjPyo7V8P=w408-h544-k-no",mapQuery:"Green Twings, Viazg"},
         { id: 28, name: "Exotic Plants",owner:"Cherishma",address:"plot no. 25, Exotic Plants, Sagar Nagar, Visakhapatnam, Andhra Pradesh 530045",phone:"9456782133",imgCard:"https://images.jdmagicbox.com/comp/visakhapatnam/l5/0891px891.x891.221111013622.e4l5/catalogue/exotic-plants-visakhapatnam-plant-nurseries-b40hlhz2za.jpg",imgModal:"https://images.jdmagicbox.com/comp/visakhapatnam/l5/0891px891.x891.221111013622.e4l5/catalogue/exotic-plants-visakhapatnam-plant-nurseries-wselei5lg8.jpg",mapQuery:"Exotic plants,Vizag"},
       ];
-
       const nurseryGrid = document.getElementById('nursery-grid');
       const modalContainer = document.getElementById('modal-container');
       const searchBar = document.getElementById('search-bar');
-
       function displayNurseries() {
         nurseryGrid.innerHTML = '';
         modalContainer.innerHTML = '';
-
         nurseryData.forEach(nursery => {
           const card = document.createElement('div');
           card.className = 'card';
@@ -576,7 +563,6 @@
             </div>
           `;
           nurseryGrid.appendChild(card);
-
           const modal = document.createElement('div');
           modal.className = 'modal';
           modal.id = 'modal-' + nursery.id;
@@ -598,15 +584,12 @@
           `;
           modalContainer.appendChild(modal);
         });
-
         addEventListeners();
       }
-
       function addEventListeners() {
         searchBar.addEventListener('input', (e) => {
           const searchTerm = e.target.value.toLowerCase();
           const allCards = document.querySelectorAll('.card');
-
           allCards.forEach(card => {
             const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
             if (cardTitle.includes(searchTerm)) {
@@ -616,8 +599,6 @@
             }
           });
         });
-
-        // Use event delegation for card clicks for better performance
         nurseryGrid.addEventListener('click', (event) => {
             const card = event.target.closest('.card');
             if (card) {
@@ -625,8 +606,6 @@
                 document.getElementById(modalId).style.display = 'flex';
             }
         });
-
-        // Use event delegation for modal closing
         modalContainer.addEventListener('click', (event) => {
             if (event.target.classList.contains('modal-close-btn')) {
                 const modalId = 'modal-' + event.target.getAttribute('data-id');
