@@ -16,7 +16,7 @@
       <!-- Intro Panel -->
       <div class="intro-panel">
         <div class="logo">
-          <img src="../../logo.jpg" alt="EcoVANA Logo" />
+          <img src="./logo.jpg" alt="EcoVANA Logo" />
         </div>
         <h2>Welcome to&nbsp;<span>EcoVANA</span></h2>
         <p>We make it for you</p>
@@ -117,7 +117,7 @@
       if (match) {
         localStorage.setItem("currentUser", JSON.stringify(match));
         alert(` ✅ Welcome back, ${match.name}! `);
-        window.location.href="../../Project/Project/homepage.html";
+        window.location.href="./homepage.html";
       } else {
         alert("❌ Invalid email or password. Please try again.");
       }
